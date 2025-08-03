@@ -1,0 +1,240 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for food items -->
+    <radialGradient id="curryGradient" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="70%" style="stop-color:#FF8C00"/>
+      <stop offset="100%" style="stop-color:#FF4500"/>
+    </radialGradient>
+    
+    <radialGradient id="rotiGradient" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#F5DEB3"/>
+      <stop offset="70%" style="stop-color:#DEB887"/>
+      <stop offset="100%" style="stop-color:#CD853F"/>
+    </radialGradient>
+    
+    <radialGradient id="riceGradient" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#FFFACD"/>
+      <stop offset="100%" style="stop-color:#F0E68C"/>
+    </radialGradient>
+    
+    <radialGradient id="tandoorGradient" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#FF6347"/>
+      <stop offset="100%" style="stop-color:#8B0000"/>
+    </radialGradient>
+    
+    <linearGradient id="plateGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6E6FA"/>
+      <stop offset="100%" style="stop-color:#D8BFD8"/>
+    </linearGradient>
+    
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0"/>
+      <stop offset="50%" style="stop-color:#A9A9A9"/>
+      <stop offset="100%" style="stop-color:#696969"/>
+    </linearGradient>
+    
+    <!-- Text shadow filter -->
+    <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#00000060"/>
+    </filter>
+    
+    <!-- Item shadow filter -->
+    <filter id="itemShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="1" flood-color="#00000030"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with warm gradient -->
+  <rect width="600" height="400" fill="linear-gradient(45deg, #FFF8DC, #F5F5DC)"/>
+  
+  <!-- Decorative background pattern -->
+  <circle cx="80" cy="60" r="25" fill="#FF69B430" opacity="0.2"/>
+  <circle cx="520" cy="340" r="30" fill="#FFD70030" opacity="0.2"/>
+  <circle cx="150" cy="340" r="20" fill="#FF830030" opacity="0.2"/>
+  
+  <!-- INDIAN FOOD SECTION -->
+  
+  <!-- Main curry bowl -->
+  <g filter="url(#itemShadow)">
+    <ellipse cx="100" cy="160" rx="35" ry="25" fill="url(#plateGradient)"/>
+    <ellipse cx="100" cy="155" rx="30" ry="20" fill="url(#curryGradient)"/>
+    <circle cx="95" cy="150" r="3" fill="#FF6347" opacity="0.7"/>
+    <circle cx="105" cy="155" r="2" fill="#32CD32" opacity="0.8"/>
+  </g>
+  
+  <!-- Biryani bowl -->
+  <g filter="url(#itemShadow)">
+    <ellipse cx="180" cy="180" rx="40" ry="30" fill="url(#plateGradient)"/>
+    <ellipse cx="180" cy="175" rx="35" ry="25" fill="url(#riceGradient)"/>
+    <!-- Biryani garnish -->
+    <rect x="170" y="165" width="1" height="6" fill="#8B4513" opacity="0.8"/>
+    <rect x="175" y="168" width="1" height="4" fill="#8B4513" opacity="0.8"/>
+    <rect x="185" y="166" width="1" height="5" fill="#8B4513" opacity="0.8"/>
+    <circle cx="175" cy="170" r="2" fill="#FF4500" opacity="0.6"/>
+  </g>
+  
+  <!-- Tandoori chicken -->
+  <g filter="url(#itemShadow)">
+    <ellipse cx="280" cy="140" rx="25" ry="15" fill="url(#tandoorGradient)" transform="rotate(-20 280 140)"/>
+    <ellipse cx="285" cy="145" rx="20" ry="12" fill="#FF6347" transform="rotate(-20 285 145)"/>
+    <circle cx="275" cy="138" r="2" fill="#FFD700" opacity="0.8"/>
+  </g>
+  
+  <!-- Dosa -->
+  <g filter="url(#itemShadow)">
+    <ellipse cx="380" cy="120" rx="60" ry="20" fill="url(#rotiGradient)" transform="rotate(15 380 120)"/>
+    <ellipse cx="375" cy="118" rx="45" ry="15" fill="#DEB887" transform="rotate(15 375 118)"/>
+    <circle cx="370" cy="115" r="2" fill="#CD853F" opacity="0.6"/>
+  </g>
+  
+  <!-- Samosas -->
+  <g filter="url(#itemShadow)">
+    <path d="M120 240 L140 250 L130 270 Z" fill="#DEB887"/>
+    <path d="M140 260 L160 270 L150 290 Z" fill="#CD853F"/>
+  </g>
+  
+  <!-- Naan bread -->
+  <g filter="url(#itemShadow)">
+    <ellipse cx="220" cy="260" rx="35" ry="20" fill="url(#rotiGradient)" transform="rotate(-10 220 260)"/>
+    <circle cx="215" cy="255" r="2" fill="#8B4513" opacity="0.5"/>
+    <circle cx="225" cy="262" r="1.5" fill="#8B4513" opacity="0.6"/>
+  </g>
+  
+  <!-- Chutneys -->
+  <g filter="url(#itemShadow)">
+    <ellipse cx="320" cy="240" rx="15" ry="12" fill="url(#plateGradient)"/>
+    <ellipse cx="320" cy="238" rx="12" ry="10" fill="#228B22"/>
+    <ellipse cx="350" cy="245" rx="15" ry="12" fill="url(#plateGradient)"/>
+    <ellipse cx="350" cy="243" rx="12" ry="10" fill="#FF4500"/>
+  </g>
+  
+  <!-- BARBERSHOP SECTION -->
+  
+  <!-- Barber pole -->
+  <g filter="url(#itemShadow)">
+    <rect x="450" y="80" width="12" height="60" fill="#FFFFFF" rx="6"/>
+    <path d="M450 85 L462 95 L450 105 L462 115 L450 125 L462 135" stroke="#FF0000" stroke-width="3" fill="none"/>
+    <path d="M456 80 L456 140" stroke="#0000FF" stroke-width="2"/>
+    <circle cx="456" cy="75" r="8" fill="url(#metalGradient)"/>
+    <circle cx="456" cy="145" r="8" fill="url(#metalGradient)"/>
+  </g>
+  
+  <!-- Scissors -->
+  <g filter="url(#itemShadow)" transform="translate(480, 160) rotate(45)">
+    <ellipse cx="0" cy="-10" rx="8" ry="3" fill="url(#metalGradient)"/>
+    <ellipse cx="0" cy="10" rx="8" ry="3" fill="url(#metalGradient)"/>
+    <line x1="-8" y1="-10" x2="15" y2="10" stroke="#696969" stroke-width="2"/>
+    <line x1="-8" y1="10" x2="15" y2="-10" stroke="#696969" stroke-width="2"/>
+    <circle cx="5" cy="0" r="3" fill="#A9A9A9"/>
+  </g>
+  
+  <!-- Hair clipper -->
+  <g filter="url(#itemShadow)">
+    <rect x="520" y="200" width="25" height="40" fill="#2F4F4F" rx="5"/>
+    <rect x="525" y="205" width="15" height="8" fill="url(#metalGradient)"/>
+    <line x1="527" y1="213" x2="527" y2="230" stroke="#C0C0C0" stroke-width="1"/>
+    <line x1="530" y1="213" x2="530" y2="230" stroke="#C0C0C0" stroke-width="1"/>
+    <line x1="533" y1="213" x2="533" y2="230" stroke="#C0C0C0" stroke-width="1"/>
+    <line x1="536" y1="213" x2="536" y2="230" stroke="#C0C0C0" stroke-width="1"/>
+    <line x1="539" y1="213" x2="539" y2="230" stroke="#C0C0C0" stroke-width="1"/>
+  </g>
+  
+  <!-- SMALL BUSINESS ITEMS -->
+  
+  <!-- Cash register -->
+  <g filter="url(#itemShadow)">
+    <rect x="30" y="300" width="50" height="35" fill="#2F4F4F" rx="3"/>
+    <rect x="35" y="305" width="40" height="15" fill="#000000" rx="2"/>
+    <rect x="40" y="325" width="8" height="8" fill="#FFFFFF" rx="1"/>
+    <rect x="50" y="325" width="8" height="8" fill="#FFFFFF" rx="1"/>
+    <rect x="60" y="325" width="8" height="8" fill="#FFFFFF" rx="1"/>
+    <rect x="70" y="325" width="8" height="8" fill="#32CD32" rx="1"/>
+    <text x="57" y="313" font-family="monospace" font-size="8" fill="#00FF00">$99.99</text>
+  </g>
+  
+  <!-- Shopping cart -->
+  <g filter="url(#itemShadow)">
+    <path d="M430 300 L445 300 L450 320 L435 320 Z" fill="#A9A9A9" stroke="#696969" stroke-width="1"/>
+    <rect x="435" y="285" width="12" height="15" fill="none" stroke="#696969" stroke-width="2"/>
+    <circle cx="438" cy="325" r="3" fill="#2F4F4F"/>
+    <circle cx="447" cy="325" r="3" fill="#2F4F4F"/>
+    <line x1="425" y1="300" x2="430" y2="300" stroke="#696969" stroke-width="2"/>
+  </g>
+  
+  <!-- Coffee cup (café business) -->
+  <g filter="url(#itemShadow)">
+    <path d="M500 280 L500 300 Q500 310 510 310 L520 310 Q530 310 530 300 L530 280 Z" fill="#8B4513"/>
+    <ellipse cx="515" cy="280" rx="15" ry="5" fill="#4A4A4A"/>
+    <path d="M530 285 Q540 285 540 295 Q540 305 530 305" fill="none" stroke="#8B4513" stroke-width="2"/>
+    <!-- Steam -->
+    <path d="M510 270 Q512 265 510 260" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.6"/>
+    <path d="M520 270 Q522 265 520 260" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Calculator -->
+  <g filter="url(#itemShadow)">
+    <rect x="380" y="320" width="30" height="40" fill="#2F4F4F" rx="3"/>
+    <rect x="385" y="325" width="20" height="8" fill="#000000" rx="1"/>
+    <rect x="387" y="337" width="4" height="4" fill="#FFFFFF" rx="0.5"/>
+    <rect x="393" y="337" width="4" height="4" fill="#FFFFFF" rx="0.5"/>
+    <rect x="399" y="337" width="4" height="4" fill="#FFFFFF" rx="0.5"/>
+    <rect x="387" y="343" width="4" height="4" fill="#FFFFFF" rx="0.5"/>
+    <rect x="393" y="343" width="4" height="4" fill="#FFFFFF" rx="0.5"/>
+    <rect x="399" y="343" width="10" height="10" fill="#FF4500" rx="0.5"/>
+    <text x="395" y="330" font-family="monospace" font-size="6" fill="#00FF00">888.88</text>
+  </g>
+  
+  <!-- Business card holder -->
+  <g filter="url(#itemShadow)">
+    <rect x="280" y="320" width="25" height="15" fill="#2F4F4F" rx="2"/>
+    <rect x="285" y="315" width="15" height="10" fill="#FFFFFF" stroke="#000000" stroke-width="0.5"/>
+    <line x1="287" y1="318" x2="298" y2="318" stroke="#000000" stroke-width="0.3"/>
+    <line x1="287" y1="320" x2="295" y2="320" stroke="#000000" stroke-width="0.3"/>
+  </g>
+  
+  <!-- POS tablet -->
+  <g filter="url(#itemShadow)">
+    <rect x="150" y="320" width="35" height="25" fill="#2F4F4F" rx="3"/>
+    <rect x="155" y="325" width="25" height="15" fill="#000000" rx="1"/>
+    <circle cx="167" cy="347" r="2" fill="#A9A9A9"/>
+    <rect x="160" y="330" width="15" height="8" fill="#4169E1" opacity="0.7" rx="1"/>
+    <text x="167" y="335" font-family="sans-serif" font-size="4" fill="#FFFFFF" text-anchor="middle">PAY</text>
+  </g>
+  
+  <!-- Spices and ingredients scattered -->
+  <circle cx="60" cy="100" r="2" fill="#FF4500" opacity="0.7"/>
+  <circle cx="65" cy="105" r="1.5" fill="#FFD700" opacity="0.8"/>
+  <circle cx="340" cy="90" r="1" fill="#8B4513" opacity="0.6"/>
+  <circle cx="200" cy="300" r="1.5" fill="#32CD32" opacity="0.7"/>
+  <circle cx="420" cy="180" r="2" fill="#FF6347" opacity="0.6"/>
+  <circle cx="490" cy="120" r="1" fill="#9932CC" opacity="0.7"/>
+  
+  <!-- Steam effects from hot food -->
+  <path d="M100 130 Q105 120 100 110 Q95 100 100 90" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M180 145 Q185 135 180 125" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M280 110 Q285 100 280 90" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M220 230 Q225 220 220 210" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <!-- Text overlay -->
+  <g filter="url(#textShadow)">
+    <text x="300" y="210" font-family="serif" font-size="36" font-weight="bold" fill="#FFFFFF" text-anchor="middle" stroke="#8B4513" stroke-width="0.5">
+      Kuttyma
+    </text>
+    <text x="300" y="240" font-family="sans-serif" font-size="18" font-weight="300" fill="#FFFFFF" text-anchor="middle" letter-spacing="2px" stroke="#8B4513" stroke-width="0.3">
+      ADVISORS
+    </text>
+  </g>
+  
+  <!-- Decorative border elements -->
+  <rect x="15" y="15" width="570" height="370" fill="none" stroke="#FF69B4" stroke-width="2" opacity="0.3" rx="20"/>
+  <circle cx="40" cy="40" r="6" fill="#FF69B4" opacity="0.4"/>
+  <circle cx="560" cy="40" r="6" fill="#FF69B4" opacity="0.4"/>
+  <circle cx="40" cy="360" r="6" fill="#FF69B4" opacity="0.4"/>
+  <circle cx="560" cy="360" r="6" fill="#FF69B4" opacity="0.4"/>
+  
+  <!-- Small business icons scattered -->
+  <circle cx="470" cy="50" r="3" fill="#32CD32" opacity="0.6"/>
+  <circle cx="130" cy="50" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="550" cy="150" r="3" fill="#FF69B4" opacity="0.6"/>
+</svg>
