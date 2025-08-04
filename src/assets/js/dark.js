@@ -37,12 +37,5 @@ detectColorScheme();
 document.getElementById("dark-mode-toggle").addEventListener("click", () => {
     // on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
     localStorage.getItem("theme") === "light" ? enableDarkMode() : disableDarkMode();
-    /* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #dark-mode-toggle {
-    /* existing declarations… */
-    margin-right: 0.25rem;   // pushes button slightly left
-  }
-}
 
 });
