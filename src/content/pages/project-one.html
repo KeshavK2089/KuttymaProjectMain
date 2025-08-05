@@ -67,6 +67,21 @@ permalink: "/project-one/"
                                     <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
                                 </picture>
                                 </div> 
+                                                            <!-- New barbertamil column -->
+                            <div class="cs-row cs-row-2">
+                                <picture class="cs-picture cs-picture-1">
+                                    <!--Mobile-->
+                                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/barbertamil.jpg" | resize({ width: 420, height: 567 }) | avif %}" type="image/avif">
+                                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/barbertamil.jpg" | resize({ width: 420, height: 567 }) | webp %}" type="image/webp">
+                                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/barbertamil.jpg" | resize({ width: 420, height: 567 }) | jpeg %}" type="image/jpeg">
+                                    <!--Tablet/Desktop-->
+                                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/barbertamil.jpg" | resize({ width: 420, height: 567 }) | avif %}" type="image/avif">
+                                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/barbertamil.jpg" | resize({ width: 420, height: 567 }) | webp %}" type="image/webp">
+                                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/barbertamil.jpg" | resize({ width: 420, height: 567 }) | jpeg %}" type="image/jpeg">
+                                    <img src="{% getUrl "/assets/images/barbertamil.jpg" | resize({ width: 420, height: 567 }) | jpeg %}" alt="Barber sign in Tamil" width="420" height="567" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+      
                             </div>
                             <!-- Right Content Section-->
                             <div class="cs-content">
