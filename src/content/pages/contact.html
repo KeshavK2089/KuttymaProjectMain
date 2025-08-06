@@ -58,8 +58,14 @@ permalink: "/contact/"
                         Have a question or ready to grow online? Drop us a note as Kuttyma’s team replies lightning-fast today!
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
-                    <label>
+                    <form id="cs-form-265"
+                          name="contact"
+                          method="POST"
+                          data-netlify="true"
+                          action="/contact">
+                      <input type="hidden" name="form-name" value="contact">
+                          <!-- optional honeypot for spam: <div hidden><input name="bot-field"></div> -->
+                        <label>
                         Name
                         <input required type="text" id="name-265" name="name" placeholder="Name">
                     </label>
