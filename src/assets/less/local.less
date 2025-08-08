@@ -245,45 +245,7 @@
         }
     }
 }
-/* src/assets/less/local.less */
-.cs-portfolio-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  border-radius: 8px;
-  overflow: hidden;
 
-  th {
-    background: #f5f5f5;
-    font-weight: 600;
-    text-align: left;
-  }
-
-  th,
-  td {
-    padding: clamp(.75rem, 2vw, 1.25rem);
-    border-bottom: 1px solid #eee;
-  }
-
-  tr:nth-child(even) {
-    background: #fafafa;
-  }
-
-  .cs-action a {
-    display: inline-block;
-    padding: .5rem 1rem;
-    background: #0073e6;
-    color: #fff;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-
-    &:hover {
-      background: #005bb5;
-    }
-  }
-}
 
 /*-- -------------------------- -->
 <---          Gallery           -->
@@ -319,6 +281,60 @@
         .cs-title {
             margin: 0;
             max-width: 20ch;
+        }
+        .cs-portfolio-list {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .cs-portfolio-table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+            border-radius: (8/16rem);
+            overflow: hidden;
+
+            th,
+            td {
+                padding: (16/16rem);
+                text-align: left;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #f7f7f7;
+            }
+
+            .cs-button-solid {
+                padding: (8/16rem) (16/16rem);
+                font-size: (14/16rem);
+            }
+        }
+        .cs-portfolio-list {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .cs-portfolio-table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+            border-radius: (8/16rem);
+            overflow: hidden;
+
+            th,
+            td {
+                padding: (16/16rem);
+                text-align: left;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #f7f7f7;
+            }
+
+            .cs-button-solid {
+                padding: (8/16rem) (16/16rem);
+                font-size: (14/16rem);
+            }
         }
 
         .cs-image-group {
